@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-black" style="background-color: black;">
+    <script src="object.js">
+        //array:collection of data 
+        //let arr=[10,20,30,40]
+
+       // const myarr= new Array[1,2,3,4]//sec way to write 
+     
+       //array methods
+        /*console.log(arr.push(6))
+        arr.push(7)
+        arr.pop()
+        arr.unshift(9)//piche ki sari value ki position change hoti hai 
+        arr.shift()
+        console.log(arr)
+        console.log(arr.includes(6))//jab exist krega then it will return true otherwise falses
+        console.log(arr.indexOf(0))
+
+        const newarr=arr.join()//it will convert into string
+        console.log(arr)
+        console.log(newarr)
+
+        //slice and splice 
+
+        console.log("a",arr)
+
+        const my=arr.slice(1,3)//rang include nhi hoti hai 
+        console.log(my)
+
+        console.log("b",arr)
+        const myne=arr.splice(1,4)//rang include hoti hai counting 
+        console.log(myne)*/
+
+//array function 
+
+const arr=["thor","ironman","spiderman"]
+const arr2=["superman","flash","batman"]
+
+console.log(arr)
+console.log(arr2)
+
+//arr.push(arr2)//this is not right way to concat
+let a=arr.concat(arr2)//this right way
+console.log(a)
+
+//spread op with this...
+const aa=[...arr,...arr2]
+console.log(aa)
+
+const c=[1,2,3,[4,5,6],7,[6,7,[8,9]]]//to make in single array 
+
+const another=c.flat(Infinity)
+console.log(another)
+
+//jab data node list mein object mein then you want array then you cna use these mehtod to convert into array 
+console.log(Array.isArray("mamta"))
+console.log(Array.from("mamta"))
+console.log(Array.from({name:"mamta"}))//intersting keys you can create array something like that 
+
+let scroe1=100
+let scroe2=200
+let scroe3=300
+let scroe4=400
+
+console.log(Array.of(scroe1,scroe2,scroe3,scroe4))
+
+
+
+    </script>
+    
+</body>
+</html>

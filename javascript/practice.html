@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //var is globally scope isko hum khi se bhi change karskte hai,variabale can be declared ,error throw krta hai 
+
+   //let is blocked scoped variable but this can not be declared 
+
+   //const is constant varible cannot be changed const author="this "
+ //author="that" it will throw an error
+ 
+ // practice
+//1
+ let name="mamta";
+ let b=23;
+ console.log(name+b)
+//2
+ console.log(typeof(name+b))
+
+ //3
+// const a={
+//     name:"mamta",
+//     age:23,
+// }
+//a="rani"//here you cannot change the vallue of const
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // on loops 
+//1)
+        // let mark={
+        //     harry:89,
+        //     shubham:90,
+        //     shruti:78
+
+        // }
+        // for(let key in mark)
+        // {
+        //     console.log("key=",key,"marks=",mark[key])
+        // }
+
+        //2) operators
+
+        // let age=prompt("enter your age56")
+        // if(age>=10&&age<=20)
+        // {
+        //    console.log("yes it is lies between 10 t0 20")
+        // }
+        // else{
+        //     console.log("no it is not")
+        // }
+
+        //  let age=prompt("enter your age ")
+        //  switch(age)
+        //  {
+        //     case "12":
+        //         console.log("it is 12")
+        //         break
+
+        //         case "13":
+        //         console.log("it is 13")
+        //         break
+        //         case "14":
+        //         console.log("it is 14")
+        //         break13
+        //         default:
+        //             console.log("nothing")
+
+        //  }
+//    let num=prompt("enter the number")
+
+//    if(num%2==0&&num%3==0)  //if(num%2==0 || num%3==0)  
+//    {
+//     console.log("it is divisble")
+//    }
+//    else{
+//     console.log("it is not")
+//    }
+
+//ternary operator
+  //let age=12
+  //let a=age<18? "you cannot drive":"you can drive"
+  //console.log(a)
+
+
+
+
+
+// let num=prompt("enter the number")
+
+// if(num%5==0)
+// {
+//     console.log("yes it is")
+// }
+// else (
+//     console.log("not it is ")
+// )
+  
+
+// let name="riya kumari";
+
+// console.log("length",name.length);
+// console.log("position",name[6]); //index position show
+
+// let obj={
+//     name:"mamta",
+//     age:22,
+// };
+
+
+//let output=`the name is  ${obj.name} and age is ${obj.age} rupees`;
+//console.log(output)
+// \n is for next line....\t for tab escape character length ekk single char se cout hoti hai 
+
+//array :collection of item
+
+// let marks=["mamta","riya","ramna","anter"];
+// let a=[10,20,30,40,50];
+// console.log(marks.length);
+// marks[0]="hello"
+// console.log(marks[0]);
+
+// console.log(a);
+// //strings 
+
+//loops:
+
+// for(let i=0; i<=10; i++){
+//   console.log("num",i)
+// }
+
+
+//even number find out 
+//1)
+// for(let i=10; i<=40; i++)
+// {  
+//   if(i%2==0){
+//     console.log("it is even",i)
+//   }
+//   // else{
+//   //   console.log("it is odd",i)
+//   // }
+  
+// }
+
+//2)
+// let loggedin=false;
+// for(let i=1; i<=3; i++)
+// {
+//   loggedin=false;
+//   console.log("loggedin",loggedin,i);
+// }
+// loggedin=true;
+// console.log("loggedin",loggedin)
+// console.log("successfully logged in ")
+ 
+// let loggedin=false;
+// for(let i=0; i<=3 ;i++ )
+// {
+//   console.log("incorrect correnditial");
+//   if(i==3)
+//   {
+//     loggedin=true;
+//     console.log("loggedin",loggedin)
+//   }
+// }
+// console.log("successfuly logged in")
+
+
+// for(let i=1; i<=100; i++)
+// {
+//   console.log("i",i);
+//  // if(i==10)
+//   if(i%10==0)
+//   {
+//     console.log("checkpoint",i)
+//   }
+//     if(i==50){
+//     console.log("half way there")
+//   }
+//   if(i==100)
+//  {
+//     console.log("you made it")
+//  }
+  
+// }
+// console.log("all done")
+
+// for(let i=0; i<=3; i++)
+// {
+//   console.log("i",i)
+// }
+//  for(str="monkey",i=0; str!="banana"; i++){
+//   console.log(str)
+//   if(i==5){
+//     str="banana";
+//     console.log(str)
+
+//   }
+//    console.log(i)
+//  }
+
+for(let i=0; i<=100; i ++ ){
+ console.log(i);
+  // if(i==5){
+  //  console.log("end the line")
+  //   break;
+  // }
+  if(i==2){
+    i++;
+  console.log("this is loop",i)
+    continue;
+} 
+if(i==6){
+  console.log(i)
+  break;
+}
+
+}
+
+
+
+    </script>
+</body>
+</html>

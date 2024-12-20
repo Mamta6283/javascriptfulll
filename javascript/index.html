@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //airthmectic op
+    //console.log("mamta");
+   // let a=5;
+    //let b=2;
+    //console.log("a=",a,"&b=",b)
+
+    //assignment op
+   // a=a+10;
+    //a=a-2
+
+    //comparision op 
+   // console.log("5"==5); //loose equality value compare karti hai 
+    //console.log("5"===5); //strict equality type of data bhi compare karti hai
+
+   // console.log("a+b=",a+b);
+
+   //ternary op
+   //let age=23;
+   //let status =(age >18) ? "i can vote":"icannot vote";
+   //let age=18; you canot intialize after operation
+   //console.log(status);
+
+   // logical op to merge two operation AND ,OR ,NOT
+   //AND ismein sab true hai to ture ayega then ek bhi false hai then false ayega 
+   //OR agr ek bhi true hai then true ayega 
+   //NOT agr ture ke sath lgagge then false and false kke sath true ayega
+     
+   
+   //let ans =(true && true && true);
+   //let ans =(false || false || false);
+   //let ans=(!false);
+   //console.log(ans);
+
+
+   //non- boolean
+   // and (true&&true)=true (false||true )=true (false||false)=false (true&&false)=false if we put true = mamta then we use new concept then we use falsy and truthy
+   
+   // yaha pe falsy and truthy hota hai jismein se undfined null 0 false(nan) not a number and truthy is anything which is not falsy 
+
+   //short circuting jahan usko true mil jayega then age conditon check nhi krrga
+   //console.log(false || 7 || 11 ||18)
+
+   //bitwise operator 
+   //and op if all ans should true or false
+   // or if if one ans is true then it will return ltrue 
+   // not it there 0 then become 1 and vice versA
+   //zor op if 00 is same then ans 0 is 0 1 is then ans 1 ,if 1 1 then ans 0 if 1 0 then ans 1
+  
+
+   //console.log(2&5);
+   //console.log(2|5);
+   
+
+    // left shif operator jo ki 2 se multiply kar dega 
+    // right shift op jo ki 2 se divide kar dega
+  //  console.log(10<<1);
+   //console.log(10>>1);
+
+   //conditional statments || control flow statments ||if else statments
+
+   //if else statment rules of to write a code //extention
+   //if (condition ){ code } else {code};
+   /*let age=24
+   if (age>=18)
+   {
+    console.log("vote");
+
+   }
+   else{
+    console.log("cannot vote");
+   }
+
+   // if else if statment if one condition is true then if part will be excuted then if it is not true then else part will be continue if that not true then another else part will be excuted extention
+   //if (condition){code}else if{code}else if{code}*/
+
+   /*let number=4;
+   let age=24;
+    if (number==1)
+    {
+        console.log("first");
+
+    }
+    else if (number==2)
+    {
+        console.log("second");
+
+    }
+    else if(number==4)
+    {
+        if (age>18){
+            console.log("i can vote");
+        }
+        console.log("third");
+    } else{
+        console .log ("nothing match");
+    }
+    /*swtich case syntax switch(condition){
+        case1 : logic(code)-------and so on
+    }*/
+    /*let number=2;
+    switch(number){
+        case 1:console.log("a");
+        break;
+        case 2:console.log("b");
+        break;
+
+        case 3:console.log("c");
+        break;
+    }*/
+
+
+
+    //arithmectic operator 
+     //let a=5;
+     //let b=2;
+    /* console.log("a+b=",a+b);
+     console.log("a-b=",a-b);
+     console.log("a*b=",a*b);
+     console.log("a/b=",a/b);
+     console.log("a%b=",a%b);
+     console.log("a=",a**b);*/
+
+
+    //unirary operator:
+    //1) increment op
+
+   // a=a+1; another way
+  // a++;=a+1 this is the way
+   
+   //2) decrement op 
+   //a=a-1;
+    // a-- you can write this thig in this way also a-1 ;
+   // post increment/decrement yahn pe value change bad mein  krta hai phle print krta hai vlaue next line men change hoga 
+
+  // console.log("a++",a++);
+   //console.log("a--",a--);
+
+   //pre-increment /decrement yahn pe value change krta hai next line mein change krta ha value
+   
+   //console.log("++a",++a);
+   //console.log("--a",--a);
+
+
+   //assignment operator
+   //+= if a+=1 iska a=a+1 ,a+=4 iska means a=a+4 hota hai
+   // a+=4 ;//a=a+4
+   //a-=4;//a=a-4
+
+   //a**=4 //a=a**4
+   //console.log("a=",a);
+
+
+   //comprison operator
+
+   //equal to== ,not equal to!=
+   //let a=5 ;//number
+   //let b="5";//stirng firstly convert into number for this case you  can also use 
+   //console.log("a==b",a==b);
+   //this can use 
+   //console.log("a===b",a===b); //ans will be in true and false
+
+  //two value ko compare krte hai
+   //let a=5;
+   //let b=3;
+
+  /* console.log("a<b",a<b);
+   console.log("a>b",a>b);
+   console.log("a==b",a==b);
+   console.log("a<=b",a<=b)
+   console.log("a>=b",a>=b)*/
+
+   //logical operator if agr cond1 and cond2 true hongi tabhi ans true hogi 
+   
+//    let a=6;
+//    let b=5;
+//    let cond1=a<b; //true
+//    let cond2= a===6 //true
+//    console.log("cond1&&cond2",cond1&&cond2);// logical AND OPERATOR AS WELL
+
+//    console.log("cond1&&cond2",cond1||cond2) //OR OPERATOR
+//    console.log(!(a<b))//false not operator will print the opposite value
+
+
+
+//conditional statments to implement condition in the code
+/*let age =25;
+if(age>=18)
+{
+    console.log("yes");
+}
+
+if (age<18)
+{
+console.log("no");
+}*/
+
+/*let mode="white";
+let color;
+if (mode==="dark")
+{
+    color="black";
+
+}
+if(mode==="white"){
+    color="white";
+}
+console.log(color);*/
+
+//if else statment
+
+/*let age =24;
+if (age>18)
+{
+    console.log("yes")
+}
+else 
+{
+    console.log("no")
+}*/
+
+//find out even or odd program jo ke sath divide ho jaye
+
+/*let num=11;
+if (num%2===0)
+{
+    console.log(num,"is even")
+}
+else{
+    console.log("odd")
+}*/
+
+// syntax=rules 
+ //else if statment condition
+
+/* let age=24;
+ if(age<18)
+ {
+    console,log("junior");
+ }
+ else if (age<=18)
+ {
+    console.log("age is matched ")
+
+ }
+ else{
+    console.log("nothing match")
+ }*/
+   //ternary operator this is simpler and compact if else
+
+   /*let age=24;
+   let result=age>=18?"adult":"no adult";
+   console.log(result);*/
+
+
+
+   //practice question
+
+   //alert("hello"); //message pop up krega 
+
+  //let name= prompt("hello");//user se value lena 
+  //console.log(name);
+  
+
+     /* let num=prompt("entera numjber ");
+      if(num%5==0)
+      {
+        console.log(num,"numbeer is multipel of 5 ")
+      }
+      else{
+        console.log("not multiple of 5 ")
+      }*/
+
+
+
+      //2 nd ques
+
+      /*let score =prompt("enter num");
+      if (score>=90 && score<=100)
+      {
+        console.log("grade a");
+      }
+      else if (score>=70 && score<=80)
+      {
+        console.log("grade b");
+      }
+      else if(score>=60 && score<=69)
+      {
+        console.log("grade c");
+
+      }
+      else if (score>=50 && score <=59)
+      {
+        console.log("grade d ");
+
+      }
+      else if(score<=0&& score<=49)
+      {
+        console.log("grade e");
+      }
+      else{
+        console.log("nobody is there")
+      }*/
+         
+      //loops and strings  :it is used ot excute a peice of code again again 
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html

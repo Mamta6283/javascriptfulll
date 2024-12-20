@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bg-black{
+            background-color: black;
+            color:white
+
+        }
+</style>
+<body class="bg-black">
+
+    <div id="button">
+    <button type="button" id="btn">clickhere</button><br><br>
+
+    <button type="button" id="btn">clickhere</button><br><br>
+
+    <button type="button" id="btn">clickhere</button><br><br>
+
+    <button type="button" id="btn">clickhere</button>
+    </div>
+
+    <ul id="image">
+        <li id="new">hello</li>
+    </ul>
+
+
+   <script src="event2.js"></script> 
+<!-- java script squencly events hote hai  -->
+</body>
+<script>
+    //this is first approach
+    document.getElementById("btn").onclick=function(){
+        alert("hello")
+    }
+
+
+//sec approach using addeventlistner
+
+document.getElementById("btn").addEventListener('click',function(){
+    //alert("hello");
+
+
+},false)
+
+// attachevent method used earlier 
+// jquey -oneventlistner was used lately
+
+
+//event object :
+document.getElementById("btn").addEventListener('click',function(e){
+    //alert("hello");
+    console.log(e)//all the pointer event detail will you get
+
+    
+},false)//here false is default
+
+//type event ,timestamp,defaultprevented 
+//target, toelement, sourcelement 
+//client ,clienty,screenx ,screeny
+//altkey ,ctrlkey,shiftkey,keycode
+
+//event propagation
+
+document.getElementById("image").addEventListener('click',function(e){
+    
+    console.log("clicked the btn");
+},false)
+
+document.getElementById("new").addEventListener('click',function(e){
+    
+    console.log("ul clicked");
+    //e.stopPropagation() this will stop  this behaviour
+    e.preventDefault();//it will prevent the defualt behaviour
+
+},false)//while we applying here true then it will go with top to bottom approach
+
+
+
+document.querySelector("#button").addEventListener('click',function(e){
+
+//console.log(e.target.parentNode);
+ //e is event here click is method//target pta lgega //parent nod will give parent of btn
+ //let removeIt=e.target.parentNode
+ //removeIt=remove()//this is used to remove in list as well
+ //removeIt.parentNode.removeChild(removeIt)//yee sare child ko remove kar dega
+
+ console.log(e.target.tagName)
+  if(e.target.tagName==="BUTTON"){
+    console.log(e.target.id)
+    let removeIt=e.target.parentNode
+    //removeIt=remove()
+   // removeIt.parentNode.removeChild(removeIt)
+  }
+
+
+
+},false)
+
+
+
+
+
+</script>
+
+</html>
